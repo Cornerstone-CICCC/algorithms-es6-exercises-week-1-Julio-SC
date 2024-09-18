@@ -13,7 +13,7 @@ You can check if a number is divisible by another number by checking if x % y ==
 
 */
 
-var x = 1;
+let x = 1;
 
 while (/* your stop condition goes here */) {
     // check divisibility
