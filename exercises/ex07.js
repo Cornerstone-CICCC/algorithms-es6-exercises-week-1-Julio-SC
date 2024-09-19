@@ -22,8 +22,8 @@ TIP: To print out the average salary with commas (i.e. 59,124), use the toLocale
 
 */
 
-let education = "Bachelor's degree"
-let salary = 59124
+let education = "Professional degree"
+let salary;
 
 switch (education){
     case "No high school diploma":
@@ -47,6 +47,9 @@ switch (education){
     case "Doctoral Degree":
         salary = 84396
         break;
+    default:
+        salary = 0
+
 }
 
-console.log(`In 2015, a person with ${education} earned an average of ${salary} per year`)
+console.log(`In 2015, a person with ${education} earned an average of ${salary.toLocaleString("en-us")}/ per year`)
