@@ -28,21 +28,21 @@ You will need to call this makeLine() function in buildTriangle().
 This will be the most complicated program you've written yet, so take some time thinking through the problem before diving into the code. What tools will you need from your JavaScript tool belt? Professionals plan out their code before writing anything. Think through the steps your code will need to take and write them down in order. Then go through your list and convert each step into actual code. Good luck!
 */
 
-function makeLine(length) {
-    var line = "";
-    for (var j = 1; j <= length; j++) {
-      line += "* "
+function makeLine(length) { // funcion recibe el largo de la linea
+    var line = ""; // variable que almacenara el largo
+    for (var j = 1; j <= length; j++) { // bucle que nos generara las lineas del piramide
+      line += "* " // asignacion individual de cada asterisco por linea
     }
-    return line + "\n";
+    return line + "\n"; // retornamos una linea de la piramide
 }
 
 
-function buildTriangle(num) {
-  let py = "";
-  for (let p = 1; p <= num; p++) {
-    py+=makeLine(p)
+function buildTriangle(num) {// funcion para la altura de la piramide
+  let py = ""; // variable que almacenara las lineas mandadas por makeline
+  for (let p = 1; p <= num; p++) {//bucle que nos va a indicar en que linea se encuentra el codigo
+    py+=makeLine(p)//almacenamos el valor regresado por la funcion  make line en cada iteracion
   }
-  console.log(py)
+  console.log(py)// imprimimos el resultado
 }
 
 buildTriangle (25)
