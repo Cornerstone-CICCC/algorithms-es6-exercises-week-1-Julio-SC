@@ -35,3 +35,14 @@ function makeLine(length) {
     }
     return line + "\n";
 }
+
+
+function buildTriangle(num) {
+  let py = "";
+  for (let p = 1; p <= num; p++) {
+    py+=makeLine(p)
+  }
+  console.log(py)
+}
+
+buildTriangle (25)
