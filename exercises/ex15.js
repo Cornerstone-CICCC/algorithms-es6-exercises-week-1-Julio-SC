@@ -7,3 +7,16 @@ currentYear – a number representing the current year
 The ageCalculator function should return a string explaining how old the person is. For example, if we called ageCalculator("John", 1983, 2015);, the return value should be as follows.
 "John is 32 years old."
 */
+
+function ageCalculator(name, yearOfBirth, currentYear){
+    let age = currentYear - yearOfBirth
+    console.log(`${name} is ${age} years old`)
+}
+
+ageCalculator ("Mike", 1997, 2024)
+
+/*function movieGenre (type, nameMovie) {
+    console.log(`${type} , ${nameMovie}`)
+}
+
+movieGenre ("Horror", "Rec")*/
