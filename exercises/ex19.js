@@ -5,10 +5,21 @@ emotions("happy", laugh(2)); // you can use your laugh function from the previou
 Prints: "I am happy, haha!"
 */
 
-let emotions = function (feeling) {
-    let action = "hahaha"
-    return action
+/*function emotions(emotion, action) {
+    console.log (`I am ${emotion},${action}!`)
 }
+    
+  emotions("happy", "hahaha")*/
 
-let emotion = ("happy")
-    console.log(`I am ${emotions}`)
+  function emotions (emotion, action) {
+    console.log (`I am ${emotion}, ${action(2)}!`)
+  }
+
+  emotions ("happy", function(num){
+    let laugh = ""
+
+    for(let x = 1; x <= num; x++) {
+        laugh += "ha"
+    }
+    return laugh
+  })
