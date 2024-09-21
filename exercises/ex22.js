@@ -11,3 +11,9 @@ Remove "Blackberry"
 Add "Yellow" and "Green"
 Add "Purple"
 */
+
+let rainbow = ["Red", "Orange", "Blackberry", "Blue"]
+
+rainbow.splice(2,1,"yellow", "green")
+rainbow.push("purple")
+console.log(rainbow)
