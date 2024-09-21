@@ -7,12 +7,12 @@ Returns: hahaha!
 
 function laughter (times) {
 
-    let laughter = "";
+    let laught = "";
     for (let x = 1; x <= times; x++) {
-        laughter = laughter + "ha"
+        laught += "ha"
     }
       
-    console.log(`${laughter}!`)
+    console.log(`${laught}!`)
 }
 
 
