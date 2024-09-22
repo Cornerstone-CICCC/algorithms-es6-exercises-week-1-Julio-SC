@@ -16,6 +16,7 @@ const savingsAccount = {
     }
   }
 };
+// I don´t understand about how to do this exercise//
 
 //add a printAccountSummary() method that returns the following account message:
 
